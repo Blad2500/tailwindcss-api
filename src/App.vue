@@ -1,5 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import ProductsManager from './components/ProductsManager.vue';
 
 const features = [
   {
@@ -78,4 +79,8 @@ const features = [
       <p>Released as a public starter template. Customize freely for your projects.</p>
     </footer>
   </div>
+</template>
+
+<template>
+  <ProductsManager />
 </template>
