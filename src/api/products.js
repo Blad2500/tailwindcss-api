@@ -5,5 +5,15 @@ const getProducts = async () => {
     return response.json();
 };
 
-export { getProducts };
+const createProduct = async(product) => {
+    const response = await fetch(API_URL, {
+        method: 'POST',
+        headers :{ 'Content-type': 'application/json' },
+        body: JSON.stringify(product)
+    })
+
+    return response.json();
+};
+
+export { getProducts, createProduct};
 
